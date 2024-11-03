@@ -27,7 +27,9 @@ camera.position.z = 4;
 
 const scene = new THREE.Scene();
 
-const boxWidth = 1;
+scene.background = new THREE.Color("lightblue")
+
+const boxWidth =1;
 const boxHeight = 1;
 const boxDepth = 1;
 const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
@@ -48,9 +50,9 @@ function makeInstance(
 }
 
 const cubes = [
-  makeInstance(geometry, "lightblue", 0),
-  makeInstance(geometry, 0x8844aa, -2),
-  makeInstance(geometry, 0xaa8844, 2),
+  makeInstance(geometry, "blue", 0),
+  makeInstance(geometry, "blue", -2),
+  makeInstance(geometry, "blue", 2),
 ];
 
 const color = 0xffffff;
